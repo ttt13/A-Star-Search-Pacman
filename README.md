@@ -21,3 +21,6 @@ The graph search version of Breadth First Search is implementing, so states that
 A* takes a heuristic function as an argument. This implementation uses the [Manhattan Distance](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html) as the heuristic. The algorithm can be tested using the following:
 
 ```python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic```
+
+## Finding food using A* Search
+```python pacman.py -l mediumCorners -p SearchAgent -a fn=aStarSearch,prob=CornersProblem,heuristic=cornersHeuristic -z 0.5```
